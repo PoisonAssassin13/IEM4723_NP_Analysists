@@ -1,0 +1,741 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="A4xCmKa7GXJv6-Q7o444">
+    <mxGraphModel dx="1452" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e4EFSrXw6oFTusmkRexd-48" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Visitor Use Statistics" vertex="1">
+          <mxGeometry height="260" width="360" x="40" y="440" as="geometry">
+            <mxRectangle height="30" width="140" x="40" y="360" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-29" parent="e4EFSrXw6oFTusmkRexd-48" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Main_Data" vertex="1">
+          <mxGeometry height="180" width="140" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-30" parent="e4EFSrXw6oFTusmkRexd-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="UnitCode (park_code)" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-31" parent="e4EFSrXw6oFTusmkRexd-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Year" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-32" parent="e4EFSrXw6oFTusmkRexd-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Month" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-42" parent="e4EFSrXw6oFTusmkRexd-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Statistic" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-43" parent="e4EFSrXw6oFTusmkRexd-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Value" vertex="1">
+          <mxGeometry height="30" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-33" parent="e4EFSrXw6oFTusmkRexd-48" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Main_State_Data" vertex="1">
+          <mxGeometry height="210" width="140" x="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-34" parent="e4EFSrXw6oFTusmkRexd-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="UnitCode (park_code)" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-35" parent="e4EFSrXw6oFTusmkRexd-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Year" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-36" parent="e4EFSrXw6oFTusmkRexd-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Month" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-44" parent="e4EFSrXw6oFTusmkRexd-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Statistic" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-46" parent="e4EFSrXw6oFTusmkRexd-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Value" vertex="1">
+          <mxGeometry height="30" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-47" parent="e4EFSrXw6oFTusmkRexd-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="StateID" vertex="1">
+          <mxGeometry height="30" width="140" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-49" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Visitor Spending Effects" vertex="1">
+          <mxGeometry height="340" width="650" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-2" parent="e4EFSrXw6oFTusmkRexd-49" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="profile_summary" vertex="1">
+          <mxGeometry height="150" width="140" x="10" y="30" as="geometry">
+            <mxRectangle height="30" width="130" x="40" y="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-3" parent="e4EFSrXw6oFTusmkRexd-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-4" parent="e4EFSrXw6oFTusmkRexd-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="year" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-5" parent="e4EFSrXw6oFTusmkRexd-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="months" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-19" parent="e4EFSrXw6oFTusmkRexd-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="profile_name" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-6" parent="e4EFSrXw6oFTusmkRexd-49" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="segment_shares_monthly" vertex="1">
+          <mxGeometry height="180" width="140" x="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-7" parent="e4EFSrXw6oFTusmkRexd-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-8" parent="e4EFSrXw6oFTusmkRexd-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="year" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-9" parent="e4EFSrXw6oFTusmkRexd-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="month" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-20" parent="e4EFSrXw6oFTusmkRexd-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-21" parent="e4EFSrXw6oFTusmkRexd-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment_split_2024" vertex="1">
+          <mxGeometry height="30" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-10" parent="e4EFSrXw6oFTusmkRexd-49" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="spending_profiles" vertex="1">
+          <mxGeometry height="300" width="140" x="330" y="30" as="geometry">
+            <mxRectangle height="30" width="130" x="330" y="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-11" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-12" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="year" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-13" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="months" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-23" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-22" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="profile_name" vertex="1">
+          <mxGeometry height="30" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-25" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="spending_group" vertex="1">
+          <mxGeometry height="30" width="140" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-26" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="reporting_group" vertex="1">
+          <mxGeometry height="30" width="140" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-24" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="spending_category" vertex="1">
+          <mxGeometry height="30" width="140" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-27" parent="e4EFSrXw6oFTusmkRexd-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="spending_pppdn" vertex="1">
+          <mxGeometry height="30" width="140" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-14" parent="e4EFSrXw6oFTusmkRexd-49" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="trip_characteristics" vertex="1">
+          <mxGeometry height="270" width="140" x="490" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-234" parent="e4EFSrXw6oFTusmkRexd-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-235" parent="e4EFSrXw6oFTusmkRexd-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="year" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-236" parent="e4EFSrXw6oFTusmkRexd-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="months" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-237" parent="e4EFSrXw6oFTusmkRexd-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="profile_name" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-238" parent="e4EFSrXw6oFTusmkRexd-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment" vertex="1">
+          <mxGeometry height="30" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-239" parent="e4EFSrXw6oFTusmkRexd-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="variable" vertex="1">
+          <mxGeometry height="30" width="140" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-240" parent="e4EFSrXw6oFTusmkRexd-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="category" vertex="1">
+          <mxGeometry height="30" width="140" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-241" parent="e4EFSrXw6oFTusmkRexd-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="value" vertex="1">
+          <mxGeometry height="30" width="140" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-50" collapsed="1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Definitions" vertex="1">
+          <mxGeometry height="30" width="100" x="440" y="440" as="geometry">
+            <mxRectangle height="570" width="570" x="440" y="440" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-54" parent="e4EFSrXw6oFTusmkRexd-50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="UnitCode = Alphanumeric code corresponding to a National Park Service unit such as national parks" vertex="1">
+          <mxGeometry height="30" width="570" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-62" parent="e4EFSrXw6oFTusmkRexd-50" style="shape=table;tableRender=collapsed;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=16;" value="Statistic" vertex="1">
+          <mxGeometry height="480" width="570" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-63" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-64" parent="e4EFSrXw6oFTusmkRexd-63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=16;" value="BC" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-65" parent="e4EFSrXw6oFTusmkRexd-63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Backcountry Overnight stays" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-66" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-67" parent="e4EFSrXw6oFTusmkRexd-66" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="CCG" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-68" parent="e4EFSrXw6oFTusmkRexd-66" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Concessionaire Operated Campground Overnight Stays" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-69" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-70" parent="e4EFSrXw6oFTusmkRexd-69" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="CL" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-71" parent="e4EFSrXw6oFTusmkRexd-69" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Concessionaire Operated Lodging Overnight Stays" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-74" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-75" parent="e4EFSrXw6oFTusmkRexd-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="MISC" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-76" parent="e4EFSrXw6oFTusmkRexd-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Miscellaneous Overnight Stays" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-77" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-78" parent="e4EFSrXw6oFTusmkRexd-77" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="NROS" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-79" parent="e4EFSrXw6oFTusmkRexd-77" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Non-Recreation Overnight Stays" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-80" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-81" parent="e4EFSrXw6oFTusmkRexd-80" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="TH" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-82" parent="e4EFSrXw6oFTusmkRexd-80" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Visitor Hours (Recreation plus Non-Recreation)" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-83" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-84" parent="e4EFSrXw6oFTusmkRexd-83" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="TNRV" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-85" parent="e4EFSrXw6oFTusmkRexd-83" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Non-Recreation Visits" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-86" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-87" parent="e4EFSrXw6oFTusmkRexd-86" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="TNRVH" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-88" parent="e4EFSrXw6oFTusmkRexd-86" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Non-Recreation Visitor Hours" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-89" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-90" parent="e4EFSrXw6oFTusmkRexd-89" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="TOS" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-91" parent="e4EFSrXw6oFTusmkRexd-89" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Total Overnight Stays" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-92" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-93" parent="e4EFSrXw6oFTusmkRexd-92" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="TRV" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-94" parent="e4EFSrXw6oFTusmkRexd-92" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Recreation Visits" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-95" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-96" parent="e4EFSrXw6oFTusmkRexd-95" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="TRVH" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-97" parent="e4EFSrXw6oFTusmkRexd-95" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Recreation Visitor Hours" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-98" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-99" parent="e4EFSrXw6oFTusmkRexd-98" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="&lt;div&gt;TRVS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-100" parent="e4EFSrXw6oFTusmkRexd-98" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="NPS Operated Campground RV Overnight Stays" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-101" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-102" parent="e4EFSrXw6oFTusmkRexd-101" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="&lt;div&gt;TT&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-103" parent="e4EFSrXw6oFTusmkRexd-101" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="NPS Operated Campground Tent Overnight Stays" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-104" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-105" parent="e4EFSrXw6oFTusmkRexd-104" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="&lt;div&gt;TTRV&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-106" parent="e4EFSrXw6oFTusmkRexd-104" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="NPS Operated Campground Overnight Stays (Tent plus RV)" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-107" parent="e4EFSrXw6oFTusmkRexd-62" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="570" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-108" parent="e4EFSrXw6oFTusmkRexd-107" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="&lt;div&gt;TV&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="94" as="geometry">
+            <mxRectangle height="30" width="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-109" parent="e4EFSrXw6oFTusmkRexd-107" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Total Visits (Recreation plus Non-Recreation)" vertex="1">
+          <mxGeometry height="30" width="476" x="94" as="geometry">
+            <mxRectangle height="30" width="476" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-110" parent="e4EFSrXw6oFTusmkRexd-50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Value = value of the given statistic" vertex="1">
+          <mxGeometry height="30" width="570" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-111" collapsed="1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Definitions" vertex="1">
+          <mxGeometry height="30" width="100" x="720" y="80" as="geometry">
+            <mxRectangle height="800" width="1480" x="720" y="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-112" parent="e4EFSrXw6oFTusmkRexd-111" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code =&amp;nbsp;Alphanumeric code corresponding to a National Park Service unit such as national parks, historic sites, wild and scenic rivers, etc." vertex="1">
+          <mxGeometry height="30" width="1480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-113" parent="e4EFSrXw6oFTusmkRexd-111" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="profile_name: Guess; its the profile of the source of the data?" vertex="1">
+          <mxGeometry height="30" width="1480" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-115" parent="e4EFSrXw6oFTusmkRexd-111" style="shape=table;tableRender=collapsed;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=16;" value="Segment" vertex="1">
+          <mxGeometry height="420" width="1480" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-116" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-117" parent="e4EFSrXw6oFTusmkRexd-116" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=16;" value="Backcountry" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-118" parent="e4EFSrXw6oFTusmkRexd-116" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who camp in the backcountry in the park" vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-119" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-120" parent="e4EFSrXw6oFTusmkRexd-119" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Boat" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-121" parent="e4EFSrXw6oFTusmkRexd-119" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who visit the park on a small cruise ship or adventure tour boat" vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-122" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-123" parent="e4EFSrXw6oFTusmkRexd-122" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="BoatIN" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-124" parent="e4EFSrXw6oFTusmkRexd-122" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who stay overnight on a boat (at anchor or at dock) within the park" vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-125" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-126" parent="e4EFSrXw6oFTusmkRexd-125" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="CampIN" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-127" parent="e4EFSrXw6oFTusmkRexd-125" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who stay at campgrounds or at backcountry camping sites within the park." vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-128" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-129" parent="e4EFSrXw6oFTusmkRexd-128" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="CampOut" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-130" parent="e4EFSrXw6oFTusmkRexd-128" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who camp outside of the park, including developed campsites and dispersed camping on public land." vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-131" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-132" parent="e4EFSrXw6oFTusmkRexd-131" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Cruise" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-133" parent="e4EFSrXw6oFTusmkRexd-131" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who visit the park on a large cruise ship" vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-134" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-135" parent="e4EFSrXw6oFTusmkRexd-134" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="HouseBoat" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-136" parent="e4EFSrXw6oFTusmkRexd-134" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who stay overnight in a houseboat in the park" vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-137" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-138" parent="e4EFSrXw6oFTusmkRexd-137" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="LocalDay" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-139" parent="e4EFSrXw6oFTusmkRexd-137" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local visitors who visit the park for a single day and return home." vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-140" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-141" parent="e4EFSrXw6oFTusmkRexd-140" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="LodgeIN" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-142" parent="e4EFSrXw6oFTusmkRexd-140" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who stay at a lodge or motel within the park." vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-143" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-144" parent="e4EFSrXw6oFTusmkRexd-143" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="LodgeOut" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-145" parent="e4EFSrXw6oFTusmkRexd-143" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who stay at motels, hotels, bed and breakfasts, glamping sites, or other specialty lodging located outside of the park." vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-146" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-147" parent="e4EFSrXw6oFTusmkRexd-146" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="NLDay" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-148" parent="e4EFSrXw6oFTusmkRexd-146" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="non-local visitors who visit the park for a single day and leave the area or return home." vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-149" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-150" parent="e4EFSrXw6oFTusmkRexd-149" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Other" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-151" parent="e4EFSrXw6oFTusmkRexd-149" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="visitors who stay overnight in the local region but do not have any lodging expenses. This segment includes visitors staying in private homes, with friends or relatives, or in other unpaid lodging." vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-152" parent="e4EFSrXw6oFTusmkRexd-115" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-153" parent="e4EFSrXw6oFTusmkRexd-152" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Tour" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry">
+            <mxRectangle height="30" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-154" parent="e4EFSrXw6oFTusmkRexd-152" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="local or non-local visitors who visit the park on a cruise or as part of an inclusive package vacation that includes lodging" vertex="1">
+          <mxGeometry height="30" width="1370" x="110" as="geometry">
+            <mxRectangle height="30" width="1370" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-155" parent="e4EFSrXw6oFTusmkRexd-111" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="segment_split_2024 = percentage of a given segment per MONTH (ie all segment_split_2024 of a given park code on a given month should equal to 1)" vertex="1">
+          <mxGeometry height="30" width="1480" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-156" parent="e4EFSrXw6oFTusmkRexd-111" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="spending_pppdn = Spending per party per day/night, inflated to 2024 dollars" vertex="1">
+          <mxGeometry height="30" width="1480" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-197" parent="e4EFSrXw6oFTusmkRexd-111" style="shape=table;tableRender=collapsed;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=16;" value="Variable" vertex="1">
+          <mxGeometry height="230" width="1480" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-198" parent="e4EFSrXw6oFTusmkRexd-197" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-199" parent="e4EFSrXw6oFTusmkRexd-198" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=16;" value="entry_rate" vertex="1">
+          <mxGeometry height="30" width="177" as="geometry">
+            <mxRectangle height="30" width="177" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-200" parent="e4EFSrXw6oFTusmkRexd-198" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="The number of days a visitor enters or re-enters the park on a trip. (Note: NPS visit data is already adjusted to remove counts for multiple entries within a single day)." vertex="1">
+          <mxGeometry height="30" width="1303" x="177" as="geometry">
+            <mxRectangle height="30" width="1303" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-201" parent="e4EFSrXw6oFTusmkRexd-197" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="50" width="1480" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-202" parent="e4EFSrXw6oFTusmkRexd-201" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="length_of_stay" vertex="1">
+          <mxGeometry height="50" width="177" as="geometry">
+            <mxRectangle height="50" width="177" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-203" parent="e4EFSrXw6oFTusmkRexd-201" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Definition varies based on value in category field. Length_of_stay (local_area): Average length of stay in the park and nearby area surrounding the park. Length_of_stay (attributable): Average length of stay in the park and nearby area that is attributed to NPS visitation (based on visitor trip purpose)." vertex="1">
+          <mxGeometry height="50" width="1303" x="177" as="geometry">
+            <mxRectangle height="50" width="1303" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-204" parent="e4EFSrXw6oFTusmkRexd-197" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-205" parent="e4EFSrXw6oFTusmkRexd-204" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="party_size" vertex="1">
+          <mxGeometry height="30" width="177" as="geometry">
+            <mxRectangle height="30" width="177" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-206" parent="e4EFSrXw6oFTusmkRexd-204" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Average number of people (adults and children) in a personal group - a personal group includes family and friends who are traveling together and sharing expenditures." vertex="1">
+          <mxGeometry height="30" width="1303" x="177" as="geometry">
+            <mxRectangle height="30" width="1303" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-207" parent="e4EFSrXw6oFTusmkRexd-197" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="30" width="1480" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-208" parent="e4EFSrXw6oFTusmkRexd-207" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="percent_noncoal" vertex="1">
+          <mxGeometry height="30" width="177" as="geometry">
+            <mxRectangle height="30" width="177" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-209" parent="e4EFSrXw6oFTusmkRexd-207" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Percent of visitors who live outside of the local area surrounding the park." vertex="1">
+          <mxGeometry height="30" width="1303" x="177" as="geometry">
+            <mxRectangle height="30" width="1303" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-210" parent="e4EFSrXw6oFTusmkRexd-197" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="60" width="1480" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-211" parent="e4EFSrXw6oFTusmkRexd-210" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;overflow=hidden;strokeColor=inherit;fontSize=16;" value="trip_purpose" vertex="1">
+          <mxGeometry height="60" width="177" as="geometry">
+            <mxRectangle height="60" width="177" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-212" parent="e4EFSrXw6oFTusmkRexd-210" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" value="Definition varies based on value in category field. trip_purpose (primary): Percent of visitors for whom visiting the NPS site was their primary or sole purpose for their trip to the local area. trip_purpose (equal): Percent of visitors for whom visiting the NPS site was one of several equally important destinations in the local area. trip_purpose (incidental): Percent of visitors for whom visiting the NPS site was an incidental or spur-of-the-moment stop during their time in the local area." vertex="1">
+          <mxGeometry height="60" width="1303" x="177" as="geometry">
+            <mxRectangle height="60" width="1303" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-213" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font size=&quot;3&quot;&gt;Original Datasets&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="780" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-214" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font size=&quot;3&quot;&gt;Proposed Tables&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="780" x="40" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-215" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Parks" vertex="1">
+          <mxGeometry height="210" width="230" x="40" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-216" parent="e4EFSrXw6oFTusmkRexd-215" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code = UnitCode (PK)" vertex="1">
+          <mxGeometry height="30" width="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-217" parent="e4EFSrXw6oFTusmkRexd-215" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_name" vertex="1">
+          <mxGeometry height="30" width="230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-218" parent="e4EFSrXw6oFTusmkRexd-215" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="North_bounding_coordinate" vertex="1">
+          <mxGeometry height="30" width="230" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-219" parent="e4EFSrXw6oFTusmkRexd-215" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Eat_bounding_coordinate" vertex="1">
+          <mxGeometry height="30" width="230" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-220" parent="e4EFSrXw6oFTusmkRexd-215" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="South_bounding_coordinate" vertex="1">
+          <mxGeometry height="30" width="230" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-221" parent="e4EFSrXw6oFTusmkRexd-215" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="West_bounding_coordinate" vertex="1">
+          <mxGeometry height="30" width="230" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-222" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bounding Coordinates can come from the .xml metadata for either dataset actually&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;park_names will likely have to be input manually by us though&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="120" x="270" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-227" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="profile_summary" vertex="1">
+          <mxGeometry height="120" width="140" x="440" y="1140" as="geometry">
+            <mxRectangle height="30" width="130" x="40" y="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-231" parent="e4EFSrXw6oFTusmkRexd-227" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="profile_name (PK)" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-228" parent="e4EFSrXw6oFTusmkRexd-227" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code (PK) (FK)" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-230" parent="e4EFSrXw6oFTusmkRexd-227" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="coverage_months" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-232" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="The original Profile_summary breaks 1NF, so we&#39;ll have to fix that. Specifically it has values per month" vertex="1">
+          <mxGeometry height="90" width="120" x="580" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-242" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="segment_shares_monthly" vertex="1">
+          <mxGeometry height="150" width="140" x="720" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-243" parent="e4EFSrXw6oFTusmkRexd-242" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code (PK)" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-245" parent="e4EFSrXw6oFTusmkRexd-242" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="month" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-246" parent="e4EFSrXw6oFTusmkRexd-242" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-247" parent="e4EFSrXw6oFTusmkRexd-242" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment_split_2024" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-258" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="trip_characteristics" vertex="1">
+          <mxGeometry height="210" width="140" x="1160" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-259" parent="e4EFSrXw6oFTusmkRexd-258" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code (PK)" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-262" parent="e4EFSrXw6oFTusmkRexd-258" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="profile_name" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-263" parent="e4EFSrXw6oFTusmkRexd-258" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-264" parent="e4EFSrXw6oFTusmkRexd-258" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="variable" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-265" parent="e4EFSrXw6oFTusmkRexd-258" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="category" vertex="1">
+          <mxGeometry height="30" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-266" parent="e4EFSrXw6oFTusmkRexd-258" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="value" vertex="1">
+          <mxGeometry height="30" width="140" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-267" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="months removed as it was just coverage_months from profile_summary" vertex="1">
+          <mxGeometry height="60" width="120" x="1020" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-268" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="months removed as it was just coverage_months from profile_summary" vertex="1">
+          <mxGeometry height="60" width="120" x="1300" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-269" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="spending_profiles" vertex="1">
+          <mxGeometry height="240" width="140" x="880" y="1140" as="geometry">
+            <mxRectangle height="30" width="130" x="330" y="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-270" parent="e4EFSrXw6oFTusmkRexd-269" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="park_code" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-273" parent="e4EFSrXw6oFTusmkRexd-269" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-274" parent="e4EFSrXw6oFTusmkRexd-269" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="profile_name" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-275" parent="e4EFSrXw6oFTusmkRexd-269" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="spending_group" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-276" parent="e4EFSrXw6oFTusmkRexd-269" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="reporting_group" vertex="1">
+          <mxGeometry height="30" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-277" parent="e4EFSrXw6oFTusmkRexd-269" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="spending_category" vertex="1">
+          <mxGeometry height="30" width="140" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-278" parent="e4EFSrXw6oFTusmkRexd-269" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="spending_pppdn" vertex="1">
+          <mxGeometry height="30" width="140" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-279" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Segment" vertex="1">
+          <mxGeometry height="90" width="140" x="440" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-280" parent="e4EFSrXw6oFTusmkRexd-279" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e4EFSrXw6oFTusmkRexd-281" parent="e4EFSrXw6oFTusmkRexd-279" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="segment_description" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
