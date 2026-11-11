@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: NP_mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: CR&LK
+      MYSQL_DATABASE: NP_Analysis
+    ports:
+      - "9000:3306"
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: NP_phpmyadmin-container
+    restart: always
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: CR&LK
+    ports:
+      - "9001:80"
+    depends_on:
+      - mysql
+  
+  jupyter:
+    image: jupyter/datascience-notebook:latest
+    container_name: NP_jupyter-container
+    restart: always
+    ports:
+      - "9002:8888"
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      JUPYTER_TOKEN: "CR&LK"
+    volumes:
+      - ./Working_directory/:/home/jovyan/iem4723/
+    depends_on:
+      - mysql
+    command: >
+      bash -c "pip install --quiet pymysql sqlalchemy &&
+               start-notebook.sh --NotebookApp.token='CR&LK' --NotebookApp.password=''"
