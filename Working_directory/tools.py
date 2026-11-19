@@ -102,5 +102,140 @@ def segments_desc():
         "Tour":"local or non-local visitors who visit the park on a cruise or as part of an inclusive package vacation that includes lodging"
     }
 
+#For a specified park code, return the segment split and month associated with that park code.
+def segment_split(park_codes):
+    conn = get_mysql()
+    cursor = conn.cursor()
+    
+    placeholders = ', '.join(['%s'] * len(park_codes))
+    cursor.execute(f"""SELECT park_code, month, segment_split
+                      FROM segment_shoares_monthly
+                      WHERE park_code IN ({placeholders})""", (park_codes))
+        
+    segment_split = []
+    for row in cursor.fetchall():
+        segment_split.append({
+            "park_code": row[0],
+            "month": row[1],
+            "segment_split": row[2]
+        })
+        
+        cursor.close()
+        conn.close()
+        return segment_split
+
+#For getting the spending profile and spending_pppdn for a specified park code, listing associated segments and spending categories.
+def spending_profile(park_codes):
+    conn = get_mysql()
+    cursor = conn.cursor()
+    
+    placeholders = ', '.join(['%s'] * len(park_codes))
+    cursor.execute(f"""SELECT park_code, segment, spending_group, spending_pppdn
+                      FROM spending_profiles
+                      WHERE park_code IN ({placeholders})""", (park_codes))
+        
+    spending_profile = []
+    for row in cursor.fetchall():
+        spending_profile.append({
+            "park_code": row[0],
+            "segment": row[1],
+            "spending_group": row[2],
+            "spending_pppdn": row[3]
+        })
+        
+        cursor.close()
+        conn.close()
+        return spending_profile
+
+#Get trip_characteristics for a specified park code, listing associated stats and segments.
+def trip_characteristics(park_codes):
+    conn = get_mysql()
+    cursor = conn.cursor()
+    
+    placeholders = ', '.join(['%s'] * len(park_codes))
+    cursor.execute(f"""SELECT park_code, segment, entry_rate, length_of_stay_attributable, length_of_stay_local_area, party_size, percent_nonlocal, trip_purpose_equal, trip_purpose_incidental, trip_purpose_primary
+                      FROM trip_characteristics
+                      WHERE park_code IN ({placeholders})""", (park_codes))
+        
+    trip_characteristics = []
+    for row in cursor.fetchall():
+        trip_characteristics.append({
+            "park_code": row[0],
+            "segment": row[1],
+            "entry_rate": row[2],
+            "length_of_stay_attributable": row[3],
+            "length_of_stay_local_area": row[4],
+            "party_size": row[5],
+            "percent_nonlocal": row[6],
+            "trip_purpose_equal": row[7],
+            "trip_purpose_incidental": row[8],
+            "trip_purpose_primary": row[9]
+        })
+        
+        cursor.close()
+        conn.close()
+        return trip_characteristics
+
+#Grab the visitor use stats table for a specified park code(s) and return associated stats and months
+def visitor_use_stats(park_codes):
+    conn = get_mysql()
+    cursor = conn.cursor()
+
+    placeholders = ', '.join(['%s'] * len(park_codes))
+    cursor.execute(f"""SELECT park_code, month, BC, CCG, CL, MISC, NROS, TH, TNRV, TNRVH, TOS, TRV, TRVH, TRVS, TT, TTRV, TV
+                      FROM visitor_use_stats
+                      WHERE park_code IN ({placeholders})""", (park_codes))
+
+    visitor_use_stats = []
+    for row in cursor.fetchall():
+        visitor_use_stats.append({
+            "park_code": row[0],
+            "month": row[1],
+            "BC": row[2],
+            "CCG": row[3],
+            "CL": row[4],
+            "MISC": row[5],
+            "NROS": row[6],
+            "TH": row[7],
+            "TNRV": row[8],
+            "TNRVH": row[9],
+            "TOS": row[10],
+            "TRV": row[11],
+            "TRVH": row[12],
+            "TRVS": row[13],
+            "TT": row[14],
+            "TTRV": row[15],
+            "TV": row[16]
+        })
+        
+        cursor.close()
+        conn.close()
+        return visitor_use_stats
+
 #
-def 
+def total_spent(park_codes):
+    conn = get_mysql()
+    cursor = conn.cursor()
+
+    placeholders = ', '.join(['%s'] * len(park_codes))
+    cursor.execute(f"""SELECT sp.park_code, sp.segment, sp.spending_group, sp.spending_pppdn, vus.TV, tc.length_of_stay_local_area
+                      FROM spending_profiles sp, visitor_use_stats vus, trip_characteristics tc
+                      WHERE sp.park_code = vus.park_code
+                      AND sp.park_code = tc.park_code
+                      AND park_code IN ({placeholders})""", (park_codes))
+
+    total_spent = []
+    for row in cursor.fetchall():
+        total_spent.append({
+            "park_code": row[0],
+            "segment": row[1],
+            "spending_group": row[2],
+            "average_spent_per_party_daily": row[3],
+            "TV": row[4],
+            "length_of_stay_local_area": row[5],
+            "total_spent": row[3] * row[4] * row[5]
+        })
+        
+        cursor.close()
+        conn.close()
+        return total_spent
