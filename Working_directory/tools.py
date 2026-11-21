@@ -102,6 +102,18 @@ def segments_desc():
         "Tour":"local or non-local visitors who visit the park on a cruise or as part of an inclusive package vacation that includes lodging"
     }
 
+def trip_characteristic_desc():
+    return {
+        "entry_rate":"The number of days a visitor enters or re-enters the park on a trip. (Adjusted to remove counts of multiple entries within a signle day)",
+        "length_of_stay_attributable":"Average length of stay in the park and nearby area that is attributed to NPS visitation based on visitor trip purpose.",
+        "length_of_stay_local_area":"Average length of stay in the park and nearby area surrounding the park.",
+        "party_size":"Average number of people in a personal group - including family and friends who are traveling together and sharing expenditures.",
+        "percent_nonlocal":"Percent of visitors who live outside of hte local area surrounding the park.",
+        "trip_purpose_equal":"Percent of visitors for whome visiting the NPS site was one of several equally important destinations in the local area.",
+        "trip_purpose_incidental":"Percent of visitors for whom visiting the NPS site was an incidental or spur-of-the-moment stop during their time in the local area.",
+        "trip_purpose_primary":"Percent of visitors for whome visiting the NPS site was their primary or soule purpose for their trip to the local area."
+    }
+
 #For a specified park code, return the segment split and month associated with that park code.
 def segment_split(park_codes):
     conn = get_mysql()
@@ -109,7 +121,7 @@ def segment_split(park_codes):
     
     placeholders = ', '.join(['%s'] * len(park_codes))
     cursor.execute(f"""SELECT park_code, month, segment_split
-                      FROM segment_shoares_monthly
+                      FROM segment_shares_monthly
                       WHERE park_code IN ({placeholders})""", (park_codes))
         
     segment_split = []
