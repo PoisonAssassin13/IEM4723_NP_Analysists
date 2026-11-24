@@ -40,3 +40,18 @@ services:
     command: >
       bash -c "pip install --quiet pymysql sqlalchemy &&
                start-notebook.sh --NotebookApp.token='CR&LK' --NotebookApp.password=''"
+
+  streamlit:
+    image:
+    container_name:
+    restart: always
+    ports:
+      -":"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    command: >
+      streamlit run app/app.py
+        --server.port 
+        --server.address 0.0.0.0
+        --server.headless true

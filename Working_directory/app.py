@@ -1,5 +1,6 @@
 import pymysql
 import streamlit as st
+import pandas as pd
 
 #Import query functions and get_mysql function from tools.py
 from tools import get_mysql, park_desc_query, segments_desc, segment_split, trip_characteristics, spending_profile, visitor_use_stats, statistic_desc
@@ -15,15 +16,17 @@ st.set_page_config(page_title="National Parks Database Explorer", layout="wide")
 
 #Sidebar title
 st.sidebar.title("Query Options")
+st.sidebar.caption("Select a query to run.")
 
 #Defining the query options section
 st.sidebar.subheader("Select a Query")
 query_option_lists = ["Parks Table", "Segment Shares Table", "Spending Profiles Table", "Trip Characteristics Table", 
-                      "Visitor Use Stat Table", ""]
+                      "Visitor Use Stat Table", "Total Spent"]
 query_option = st.sidebar.menu_button("Query Options", options=query_option_lists, key="query_option")
 
 #Defining the filter options section
 st.sidebar.subheader("Filter Options")
+st.sidebar.caption("Select filters to apply before the query.")
 
 #if the ParkNames list is not already in session state, query the parks table and create a list of park codes and names to use as filter options
 if 'ParkNames' not in st.session_state:
@@ -35,30 +38,6 @@ if 'ParkNames' not in st.session_state:
 
 #Defining the park code filter option, allowing users to select one or more parks to filter the query results, applied BEFORE the query is run. If no parks are selected, all parks will be included in the query results.
 park_code_filter = st.sidebar.multiselect("Select Park(s)", options=st.session_state.ParkNames, key="park_code_filter")
-
-#List of queries that can be filtered by month
-month_filer_queries = []
-#If the selected query option can be filtered by month, display the month filter option (Month filters applied after the query not before)
-if query_option in month_filer_queries:
-    month_filter = st.sidebar.selectbox("Select Month", options=[1,2,3,4,5,6,7,8,9,10,11,12], key="month_filter")
-
-#List of queries that can be filtered by segment
-segment_filter_queries = []
-#If the selected query option can be filtered by segment, display the segment filter option (Segment filters applied after the query not before)
-if query_option in segment_filter_queries:
-    segment_filter = st.sidebar.segmented_control("Select Segment(s)", options=list(segments_desc().keys()), key="segment_filter")
-
-
-#List of queries that can be filtered by use statistics
-use_statistics_queries = []
-if query_option in use_statistics_queries:
-    use_statistics_filter = st.sidebar.segmented_control("Select Use Statistic(s)", options=list(statistic_desc().keys()))
-
-#List of queries that can be filtered by trip characteristics
-trip_characteristics_queries = []
-if query_option in trip_characteristics_queries:
-    trip_characteristics_filter = st.sidebar.segmented_control("Select Trip Characteristic(s)", options=list(trip_characteristic_desc().keys()))
-
 
 #Don't run queries unless the user clicks the "Run Selected Query" button
 querybutton_clicked = st.sidebar.button("Run Selected Query", key = "querybutton")
@@ -98,14 +77,47 @@ else:
     if "query_result" in st.session_state:
         query_result = st.session_state.query_result
 
+st.sidebar.caption("Select filters to apply after the filter.")
+
+#TO FIX, add the lists of valid queries for each filter option below
+#List of queries that can be filtered by month
+month_filer_queries = []
+#If the selected query option can be filtered by month, display the month filter option (Month filters applied after the query not before)
+if query_option in month_filer_queries:
+    month_filter = st.sidebar.selectbox("Select Month", options=[1,2,3,4,5,6,7,8,9,10,11,12], key="month_filter")
+
+#List of queries that can be filtered by segment
+segment_filter_queries = []
+#If the selected query option can be filtered by segment, display the segment filter option (Segment filters applied after the query not before)
+if query_option in segment_filter_queries:
+    segment_filter = st.sidebar.segmented_control("Select Segment(s)", options=list(segments_desc().keys()), key="segment_filter")
+
+#List of queries that can be filtered by use statistics
+use_statistics_queries = []
+if query_option in use_statistics_queries:
+    use_statistics_filter = st.sidebar.segmented_control("Select Use Statistic(s)", options=list(statistic_desc().keys()))
+
+#List of queries that can be filtered by trip characteristics
+trip_characteristics_queries = []
+if query_option in trip_characteristics_queries:
+    trip_characteristics_filter = st.sidebar.segmented_control("Select Trip Characteristic(s)", options=list(trip_characteristic_desc().keys()))
+
+#List of queries that can be filtered by spending_group
+spending_group_queries = []
+if query_option in spending_group_queries:
+    spending_group_queries = st.sidebar.segmented_control("Select Spending Group(s)", options=['']) #TO FIX, add in the options of valid filter options
 
 #Define this next session as picking what graph to show
 st.sidebar.subheader("Graph Selection")
+st.sidebar.caption("Select what graphical representation you want from the selected query option.")
 
 #List what graphic displays can be represented for each given query option
-graph_display_options = {"Parks Table":[], "Segment Shares Table":[], 
-                         "Spending Profiles Table":[], "Trip Characteristics Table":[], 
-                         "Visitor Use Stat Table":[]}
+graph_display_options = {"Parks Table":["Number of Parks by State"], 
+                         "Segment Shares Table":["Segment Split Ratio"], 
+                         "Spending Profiles Table":["Spending PPPDN Line Chart", "Spending PPPDN Bar Chart"], 
+                         "Trip Characteristics Table":["Characteristic Bar Chart: One Park", "Characteristic Bar Chart: One Segment"], 
+                         "Visitor Use Stat Table":["Stat Line Chart by Month: One Park", "Stat Line Chart by Month: One Stat", "Stat Average Bar Chart"],
+                         "Total Spent":[""]}
 
 graph_display_select = st.sidebar.menu_button("Graphs", options = graph_display_options[query_option], key="graph_display_select")
 
@@ -122,4 +134,86 @@ if "query_result" not in st.session_state:
 st.caption(f"Showing {query_option} query results.")
 
 #Defining the tabs that will contain the required information
-graph_display, raw_data_table = st.tabs(["Graph", "Table"])
+tab_graph, tab_dataframe = st.tabs(["Graph", "Table"])
+
+#----------------------
+#Defining the tab_dataframe
+#----------------------
+
+#TO FIX, apply the filters in a filtered_query_result and display that either as a new tab or below this one mentioned here, possibly both as expanders
+#Setting an expander showing the unfiltered data
+with tab_dataframe.expander("Unfiltered Data"):
+    st.dataframe(query_result, width="stretch", hide_index=True)
+
+#Creating the filtered_query_result
+filtered_query_result = pd.DataFrame(query_result)
+#Filtering rows by months in the filter
+if query_option in month_filer_queries:
+    filtered_query_result = filtered_query_result.query('month in @month_filter')
+
+#Filtering rows by segments in the filter
+if query_option in segment_filter_queries:
+    filtered_query_result = filtered_query_result.query('segment in @segment_filter')
+
+#Filtering columns by the use_statistics in the filter
+if query_option in use_statistics_queries:
+    filtered_query_result = filtered_query_result.loc[:, filtered_query_result.columns.isin(use_statistics_filter)]
+
+#Filtering columns by the trip_characteristics in the filter
+if query_option in trip_characteristics_queries:
+    filtered_query_result = filtered_query_result.loc[:, filtered_query_result.columns.isin(trip_characteristics_filter)]
+
+ 
+
+#Setting an expander showing the filtered data
+with tab_dataframe.expander("Filtered Data"):
+    st.dataframe(filtered_query_result, width="stretch", hide_index=True)
+
+#----------------------
+#Defining the tab_graph
+#----------------------
+
+#TO FIX, add in the wondeful graphs using filtered_query_result
+if graph_display_select == "Number of Parks by State":
+    #
+    tab_graph
+
+elif graph_display_select == "Segment Split Ratio":
+    #
+    tab_graph
+
+elif graph_display_select == "Spending PPPDN Line Chart":
+    #
+    tab_graph
+
+elif graph_display_select == "Spending PPPDN Bar Chart":
+    #
+    tab_graph
+
+elif graph_display_select == "Characteristic Bar Chart: One Park":
+    #
+    tab_graph
+
+elif graph_display_select == "Characteristic Bar Chart: One Segment":
+    #
+    tab_graph
+
+elif graph_display_select == "Stat Line Chart by Month: One Park":
+    #
+    tab_graph
+
+elif graph_display_select == "Stat Line Chart by Month: One Stat":
+    #
+    tab_graph
+
+elif graph_display_select == "Stat Average Bar Chart":
+    #
+    tab_graph
+
+#Error warning if there is somehow not a valid selected graph
+else:
+    st.header("No valid graph selected, please try again.")
+
+#Just in case you want to add more, copy paste
+#elif graph_display_select == ""
+    #
