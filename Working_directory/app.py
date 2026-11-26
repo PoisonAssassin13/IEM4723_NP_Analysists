@@ -1,6 +1,7 @@
 import pymysql
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 #Import query functions and get_mysql function from tools.py
 from tools import get_mysql, park_desc_query, segments_desc, segment_split, trip_characteristics, spending_profile, visitor_use_stats, statistic_desc
@@ -81,31 +82,38 @@ st.sidebar.caption("Select filters to apply after the filter.")
 
 #TO FIX, add the lists of valid queries for each filter option below
 #List of queries that can be filtered by month
-month_filer_queries = []
+month_filer_queries = ["Visitor Use Stat Table", "Segment Shares Table"]
 #If the selected query option can be filtered by month, display the month filter option (Month filters applied after the query not before)
 if query_option in month_filer_queries:
     month_filter = st.sidebar.selectbox("Select Month", options=[1,2,3,4,5,6,7,8,9,10,11,12], key="month_filter")
 
 #List of queries that can be filtered by segment
-segment_filter_queries = []
+segment_filter_queries = ["Segment Shares Table", "Trip Characteristics Table", "Spending Profiles Table", "Total Spent"]
 #If the selected query option can be filtered by segment, display the segment filter option (Segment filters applied after the query not before)
 if query_option in segment_filter_queries:
     segment_filter = st.sidebar.segmented_control("Select Segment(s)", options=list(segments_desc().keys()), key="segment_filter")
 
 #List of queries that can be filtered by use statistics
-use_statistics_queries = []
+use_statistics_queries = ["Visitor Use Stat Table"]
 if query_option in use_statistics_queries:
     use_statistics_filter = st.sidebar.segmented_control("Select Use Statistic(s)", options=list(statistic_desc().keys()))
 
 #List of queries that can be filtered by trip characteristics
-trip_characteristics_queries = []
+trip_characteristics_queries = ["Trip Characteristics Table"]
 if query_option in trip_characteristics_queries:
     trip_characteristics_filter = st.sidebar.segmented_control("Select Trip Characteristic(s)", options=list(trip_characteristic_desc().keys()))
 
 #List of queries that can be filtered by spending_group
-spending_group_queries = []
+#TO FIX, add the filter for this
+spending_group_queries = ["Segment Shares Table", "Total Spent"]
 if query_option in spending_group_queries:
-    spending_group_queries = st.sidebar.segmented_control("Select Spending Group(s)", options=['']) #TO FIX, add in the options of valid filter options
+    spending_group_filter = st.sidebar.segmented_control("Select Spending Group(s)", options=['']) #TO FIX, add in the options of valid filter options
+
+#List of queries that can be filtered by state
+state_queries = ["Parks Table"]
+if query_option in state_queries:
+    states = list(query_result['state_id'].unique())
+    state_filter = st.sidebar.multiselect("Select State(s)", options=states)
 
 #Define this next session as picking what graph to show
 st.sidebar.subheader("Graph Selection")
@@ -120,6 +128,11 @@ graph_display_options = {"Parks Table":["Number of Parks by State"],
                          "Total Spent":[""]}
 
 graph_display_select = st.sidebar.menu_button("Graphs", options = graph_display_options[query_option], key="graph_display_select")
+
+if graph_display_select == "Number of Parks by State":
+    state_count_filter_min = st.slider("Minimum Number of States", 1, 100, 1, 1, key="state_count_filter_min")
+    state_count_filter_max = st.slider("Maximum Number of States", 1, 100, 100, 1, key="state_count_filter_max")
+
 
 #---------------------------
 #MAIN DASHBOARD CONSTRUCTION
@@ -163,7 +176,8 @@ if query_option in use_statistics_queries:
 if query_option in trip_characteristics_queries:
     filtered_query_result = filtered_query_result.loc[:, filtered_query_result.columns.isin(trip_characteristics_filter)]
 
- 
+if query_option in state_queries:
+    filtered_query_result = filtered_query_result.query('state_id in @state_filter')
 
 #Setting an expander showing the filtered data
 with tab_dataframe.expander("Filtered Data"):
@@ -174,46 +188,89 @@ with tab_dataframe.expander("Filtered Data"):
 #----------------------
 
 #TO FIX, add in the wondeful graphs using filtered_query_result
-if graph_display_select == "Number of Parks by State":
-    #
-    tab_graph
+with tab_graph:
+    if graph_display_select == "Number of Parks by State":
+        #
+        try:
+            state_count = dict()
+            for state in states:
+                state_count[state] = (filtered_query_result['state_id' == state]).sum()
 
-elif graph_display_select == "Segment Split Ratio":
-    #
-    tab_graph
+            state_count = pd.DataFrame(list(state_count.items()), columns=["state", "count"])
+            state_count = state_count.dropna()
+            state_count = state_count[(state_count['count'] >= state_count_filter_min) & (state_count['count'] <= state_count_filter_max)]
 
-elif graph_display_select == "Spending PPPDN Line Chart":
-    #
-    tab_graph
+            figure = px.bar(state_count,x="state", y="count", title="Number of Parks by State")
+            st.plotly_chart(figure, width='stretch')
+            
+        except:
+            st.subtitle("Failed to load graph")
 
-elif graph_display_select == "Spending PPPDN Bar Chart":
-    #
-    tab_graph
 
-elif graph_display_select == "Characteristic Bar Chart: One Park":
-    #
-    tab_graph
+    elif graph_display_select == "Segment Split Ratio":
+        #
+        try:
+            st
+        except:
+            st.subtitle("Failed to load graph")
 
-elif graph_display_select == "Characteristic Bar Chart: One Segment":
-    #
-    tab_graph
+    elif graph_display_select == "Spending PPPDN Line Chart":
+        #
+        try:
+            st
+        except:
+            st.subtitle("Failed to load graph")
 
-elif graph_display_select == "Stat Line Chart by Month: One Park":
-    #
-    tab_graph
 
-elif graph_display_select == "Stat Line Chart by Month: One Stat":
-    #
-    tab_graph
+    elif graph_display_select == "Spending PPPDN Bar Chart":
+        #
+        try:
+            st
+        except:
+            st.subtitle("Failed to load graph")
 
-elif graph_display_select == "Stat Average Bar Chart":
-    #
-    tab_graph
+    elif graph_display_select == "Characteristic Bar Chart: One Park":
+        #
+        try:
+            st
+        except:
+            st.subtitle("Failed to load graph")
 
-#Error warning if there is somehow not a valid selected graph
-else:
-    st.header("No valid graph selected, please try again.")
+    elif graph_display_select == "Characteristic Bar Chart: One Segment":
+        #
+        try:
+            st
+        except:
+            st.subtitle("Failed to load graph")
 
-#Just in case you want to add more, copy paste
-#elif graph_display_select == ""
-    #
+    elif graph_display_select == "Stat Line Chart by Month: One Park":
+        #
+        try:
+            st
+        except:
+            st.subtitle("Failed to load graph")
+
+    elif graph_display_select == "Stat Line Chart by Month: One Stat":
+        #
+        try:
+            st
+        except:
+            st.subtitle("Failed to load graph")
+
+    elif graph_display_select == "Stat Average Bar Chart":
+        #
+        try:
+            st
+        except:
+            st.subtitle("Failed to load graph")
+
+    #Error warning if there is somehow not a valid selected graph
+    else:
+        st.header("No valid graph selected, please try again.")
+
+    #Just in case you want to add more, copy paste
+    #elif graph_display_select == ""
+    #    try:
+    #        st
+    #    except:
+    #        st.subtitle("Failed to load graph")
