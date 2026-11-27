@@ -107,7 +107,11 @@ if query_option in trip_characteristics_queries:
 #TO FIX, add the filter for this
 spending_group_queries = ["Segment Shares Table", "Total Spent"]
 if query_option in spending_group_queries:
-    spending_group_filter = st.sidebar.segmented_control("Select Spending Group(s)", options=['']) #TO FIX, add in the options of valid filter options
+    spending_groups = ["camping fees", "equipment rental", "gas", "groceries", "guides and tour fees", "hotels", "souvenirs and other retail", 
+                       "public transportation", "recreation and entertainment", "rental cars", "restaurants", "specialty lodging", "electric vehicle charging", 
+                       "sporting goods", "local transportation", "scenic and sightseeing transportation", "cruise package", 
+                       "national parks permits and fees", "ferry and plane"]
+    spending_group_filter = st.sidebar.segmented_control("Select Spending Group(s)", options=spending_groups) #TO FIX, add in the options of valid filter options
 
 #List of queries that can be filtered by state
 state_queries = ["Parks Table"]
@@ -122,7 +126,7 @@ st.sidebar.caption("Select what graphical representation you want from the selec
 #List what graphic displays can be represented for each given query option
 graph_display_options = {"Parks Table":["Number of Parks by State"], 
                          "Segment Shares Table":["Segment Split Ratio"], 
-                         "Spending Profiles Table":["Spending PPPDN Line Chart", "Spending PPPDN Bar Chart"], 
+                         "Spending Profiles Table":["Spending PPPDN Bar Chart"], 
                          "Trip Characteristics Table":["Characteristic Bar Chart: One Park", "Characteristic Bar Chart: One Segment"], 
                          "Visitor Use Stat Table":["Stat Line Chart by Month: One Park", "Stat Line Chart by Month: One Stat", "Stat Average Bar Chart"],
                          "Total Spent":[""]}
@@ -179,6 +183,9 @@ if query_option in trip_characteristics_queries:
 if query_option in state_queries:
     filtered_query_result = filtered_query_result.query('state_id in @state_filter')
 
+if query_option in spending_group_queries:
+    filtered_query_result = filtered_query_result.query('spending_group in @spending_group_filter')
+
 #Setting an expander showing the filtered data
 with tab_dataframe.expander("Filtered Data"):
     st.dataframe(filtered_query_result, width="stretch", hide_index=True)
@@ -190,7 +197,6 @@ with tab_dataframe.expander("Filtered Data"):
 #TO FIX, add in the wondeful graphs using filtered_query_result
 with tab_graph:
     if graph_display_select == "Number of Parks by State":
-        #
         try:
             state_count = dict()
             for state in states:
@@ -208,59 +214,73 @@ with tab_graph:
 
 
     elif graph_display_select == "Segment Split Ratio":
-        #
         try:
-            st
+            figure = px.line(filtered_query_result, x="month", y="segment_split", title="Segment Split by Month", color="park_code", symbol="park_code")
+            st.plotly_chart(figure, width='stretch')
         except:
             st.subtitle("Failed to load graph")
-
-    elif graph_display_select == "Spending PPPDN Line Chart":
-        #
-        try:
-            st
-        except:
-            st.subtitle("Failed to load graph")
-
 
     elif graph_display_select == "Spending PPPDN Bar Chart":
-        #
         try:
-            st
+            figure = px.bar(filtered_query_result,x="spending_group", y="spending_pppdn", barmode="group", color="park_code", title="Spending PPPDN Chart")
+            st.plotly_chart(figure, width='stretch')
         except:
             st.subtitle("Failed to load graph")
 
     elif graph_display_select == "Characteristic Bar Chart: One Park":
-        #
         try:
-            st
+            trip_one_park = st.selectbox("Select one park:", options=list(filtered_query_result['park_code'].unique()))
+            filtered_query_result = filtered_query_result[(filtered_query_result['park_code'] == trip_one_park)]
+
+            #TO FIX, test this specifically to ensure that the barmode='group' is actually working
+            figure = px.bar(filtered_query_result, x="segment", y=trip_characteristics_filter, barmode='group', title=f"Trip Characteristics of {trip_one_park}")
+            st.plotly_chart(figure, width='stretch')
+
         except:
             st.subtitle("Failed to load graph")
 
     elif graph_display_select == "Characteristic Bar Chart: One Segment":
-        #
         try:
-            st
+            trip_one_segment = st.selectbox("Select one segment:", options=list(filtered_query_result['segment'].unique()))
+            filtered_query_result = filtered_query_result[(filtered_query_result['segment'] == trip_one_segment)]
+
+            figure = px.bar(filtered_query_result, x="park_code", y=trip_characteristics_filter, barmode='group', title=f"Trip Charcteristics Across Parks of Segment {trip_one_segment}")
+            st.plotly_chart(figure, width='stretch')
         except:
             st.subtitle("Failed to load graph")
 
     elif graph_display_select == "Stat Line Chart by Month: One Park":
-        #
         try:
-            st
+            stat_one_park = st.selectbox("Select one park:", options=list(filtered_query_result['park_code'].unique()))
+            filtered_query_result = filtered_query_result[(filtered_query_result['park_code'] == stat_one_park)]
+
+            figure = px.line(filtered_query_result, x="month", y=use_statistics_filter, title=f"Visitor Use Statistics for Park: {stat_one_park}")
+            st.plotly_chart(figure, width='stretch')
         except:
             st.subtitle("Failed to load graph")
 
     elif graph_display_select == "Stat Line Chart by Month: One Stat":
-        #
         try:
-            st
+            stat_one_stat = st.selectbox("Select one park:", options=use_statistics_filter)
+            filtered_query_result = filtered_query_result.loc[:, filtered_query_result.columns.isin(stat_one_stat)]
+
+            figure = px.line(filtered_query_result, x="month", y=stat_one_stat, color="park_code", title=f"{stat_one_stat} Of Parks by Month")
+            st.plotly_chart(figure, width='stretch')
         except:
             st.subtitle("Failed to load graph")
 
     elif graph_display_select == "Stat Average Bar Chart":
-        #
         try:
-            st
+            stat_averages = []
+            for park in park_code_filter:
+                for stat in use_statistics_filter:
+                    stat_averages.append([park, stat, filtered_query_result[stat].mean()])
+
+                
+            stat_averages = pd.DataFrame(stat_averages, columns = ['park_code', "stat", "value"])
+            
+            figure = px.bar(stat_averages, x="stat", y="value", barmode='group', color="park_code", title=f"Average of Visitor Use Statistics by Park")
+            st.plotly_chart(figure, width='stretch')
         except:
             st.subtitle("Failed to load graph")
 
